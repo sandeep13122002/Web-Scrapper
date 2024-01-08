@@ -1,6 +1,17 @@
+import { StaticImport } from 'next/dist/shared/lib/get-img-props'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+
+const navIcons = [
+  { src: '/assets/icons/search.svg', alt: 'search' },
+  { src: '/assets/icons/black-heart.svg', alt: 'heart' },
+  { src: '/assets/icons/user.svg', alt: 'user' },
+];
+
+
+
+
 
 const Navbar = () => {
   return (
@@ -18,6 +29,27 @@ const Navbar = () => {
           Price<span className='text-primary'>wise</span>
         </p>
        </Link>
+<div className="flex items-centre gap-5">
+ 
+ {navIcons.map((icon) => (
+  <Image 
+    key={icon.alt}
+    src={icon.src}
+    alt={icon.alt}
+    width={28}
+    height={28}
+    className="object-contain"
+  />
+))}
+
+
+
+
+</div>
+
+
+
+
       </nav>
 
 
