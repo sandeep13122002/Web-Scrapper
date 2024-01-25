@@ -68,7 +68,7 @@ isOutOFStock:outOfStock,
 description,
 lowestPrice:Number(currentPrice)||Number(originalPrice),
 highestPrice:Number(originalPrice)||Number(currentPrice),
-averaget:Number(currentPrice)||Number(originalPrice),
+averagePrice:Number(currentPrice)||Number(originalPrice),
 
 }
 
